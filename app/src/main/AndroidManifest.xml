@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roommate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Roommate">
+        <activity
+            android:name=".Setting.SettingRoommateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Album.AlbumViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomcodeDialog"
+            android:exported="false" />
+        <activity
+            android:name=".Album.AlbumUploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dday.DdayDialog2"
+            android:exported="false" />
+        <activity
+            android:name=".dday.DdayDialog"
+            android:exported="false" />
+        <activity
+            android:name=".dday.DdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar.CalendarScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.SettingNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.SettingSoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.SettingInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Memo.MemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Rule.RuleModifySettlementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleModifyNoiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleModifyLifestyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleModifyCleaningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleDetailCustomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleDetailSettlementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleDetailNoiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleDetailLifestyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rule.RuleDetailCleaningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

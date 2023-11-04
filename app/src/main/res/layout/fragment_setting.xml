@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting.SettingFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_setting_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="#00371919"
+            android:fontFamily="@font/im_hyemin"
+            android:text="사용자 정보"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_setting_roommate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="#00371919"
+            android:fontFamily="@font/im_hyemin"
+            android:text="룸메이트 정보"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#9F9F9F" />
+
+        <Button
+            android:id="@+id/btn_setting_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="#00371919"
+            android:fontFamily="@font/im_hyemin"
+            android:text="소리 및 진동 설정"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_setting_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="#00371919"
+            android:fontFamily="@font/im_hyemin"
+            android:text="알림 설정"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#9F9F9F" />
+
+        <Button
+            android:id="@+id/btn_setting_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="#00371919"
+            android:fontFamily="@font/im_hyemin"
+            android:text="로그아웃"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</FrameLayout>

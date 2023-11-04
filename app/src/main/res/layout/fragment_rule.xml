@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rule.RuleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rule_category1"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#70AD47"
+                android:fontFamily="@font/im_hyemin"
+                android:text="청소"
+                android:textSize="30sp"
+                app:cornerRadius="25dp" />
+
+            <Button
+                android:id="@+id/rule_category2"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#70AD47"
+                android:fontFamily="@font/im_hyemin"
+                android:text="생활"
+                android:textSize="30sp"
+                app:cornerRadius="25dp" />
+
+            <Button
+                android:id="@+id/rule_category3"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#70AD47"
+                android:fontFamily="@font/im_hyemin"
+                android:text="소음"
+                android:textSize="30sp"
+                app:cornerRadius="25dp" />
+
+            <Button
+                android:id="@+id/rule_category4"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#70AD47"
+                android:fontFamily="@font/im_hyemin"
+                android:text="정산"
+                android:textSize="30sp"
+                app:cornerRadius="25dp" />
+
+            <Button
+                android:id="@+id/rule_category5"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#70AD47"
+                android:fontFamily="@font/im_hyemin"
+                android:text="사용자 지정"
+                android:textSize="30sp"
+                app:cornerRadius="25dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

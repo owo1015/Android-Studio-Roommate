@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_photo_uploader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/im_hyemin"
+        android:text="업로더 이름"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:src="@drawable/ic_comment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_marginVertical="5dp" />
+
+    <TextView
+        android:id="@+id/txt_photo_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/im_hyemin"
+        android:text="사진 설명"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rule.RuleModifyNoiseActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/im_hyemin"
+        android:text="소음 수정"
+        android:textColor="#548235"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="-148dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E3E3E3"
+            android:paddingVertical="0.7dp"
+            android:stretchColumns="0">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="0.7dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/rule1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    android:buttonTint="#70AD47"
+                    android:fontFamily="@font/im_hyemin"
+                    android:text="소음 허용 시간"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/im_hyemin"
+                    android:textAlignment="center"
+                    android:ems="20"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="0.7dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/rule2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    android:buttonTint="#70AD47"
+                    android:fontFamily="@font/im_hyemin"
+                    android:text="취침 시 소음"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34A5A5A5"
+                    android:fontFamily="@font/im_hyemin"
+                    android:textOff="불가능"
+                    android:textOn="가능"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="0.7dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/rule3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    android:buttonTint="#70AD47"
+                    android:fontFamily="@font/im_hyemin"
+                    android:text="컨텐츠 시청"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34A5A5A5"
+                    android:fontFamily="@font/im_hyemin"
+                    android:textOff="이어폰 착용"
+                    android:textOn="이어폰 미착용"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="0.7dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/rule4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    android:buttonTint="#70AD47"
+                    android:fontFamily="@font/im_hyemin"
+                    android:text="통화 장소"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34A5A5A5"
+                    android:fontFamily="@font/im_hyemin"
+                    android:textOff="실외"
+                    android:textOn="실내"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="0.7dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/rule5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    android:buttonTint="#70AD47"
+                    android:fontFamily="@font/im_hyemin"
+                    android:text="드라이기 사용 장소"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34A5A5A5"
+                    android:fontFamily="@font/im_hyemin"
+                    android:textOff="화장실"
+                    android:textOn="방"
+                    android:textSize="17sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/rule_save"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#548235"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:fontFamily="@font/im_hyemin"
+        android:text="저장"
+        android:textSize="25sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

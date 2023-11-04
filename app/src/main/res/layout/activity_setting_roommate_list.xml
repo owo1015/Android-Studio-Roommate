@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roommate_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_roommate_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/im_hyemin"
+        android:text="룸메이트 이름"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt_roommate_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/im_hyemin"
+        android:text="이메일"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_roommate_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/im_hyemin"
+        android:text="전화번호"
+        android:textSize="20sp" />
+
+</LinearLayout>
